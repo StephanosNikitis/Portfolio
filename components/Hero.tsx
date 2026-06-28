@@ -31,6 +31,10 @@ export default function Hero() {
     const isLoaded = useContentLoaded({ videoTimeout: 8000 });
 
     useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.localStorage.setItem("hasVisitedHero", "true");
+        }
+
         if (sessionStorage.getItem("hasAnimationPlayed")) {
             // Animation has played before in this session, skip it.
             gsap.set(".hero", { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" });

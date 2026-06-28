@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import TransitionProvider from "@/providers/TransitionProvider";
+import FirstVisitRedirectProvider from "@/providers/FirstVisitRedirectProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,9 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-black">
         <TransitionProvider>
-          {children}
+          <FirstVisitRedirectProvider>
+            {children}
+          </FirstVisitRedirectProvider>
         </TransitionProvider>
       </body>
     </html>
