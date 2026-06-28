@@ -27,12 +27,12 @@ const page = () => {
               <Link href="/contact" className="text-[#717C55]">Contact</Link>
           </div>
       </nav>
-      <div className="w-full px-15 mt-6">
-        <h1 className={`${instrumentSerif.className} text-3xl text-[#3A4A16] font-bold`}>
+      <div className="w-full px-15 mt-6 md:mt-10">
+        <h1 className={`${instrumentSerif.className} text-3xl md:text-5xl text-[#3A4A16] font-bold`}>
           Hey, I&apos;m Shaurya Singh 
         </h1>
-        <p className="text-[#717C55] pt-8">
-          I’m currently pursuing B.Tech in Computer Science and Engineering at IIIT Ranchi. I am passionate about full-stack web development and enjoy building scalable, user-friendly applications.
+        <p className="text-[#717C55] pt-8 md:text-xl">
+          I&apos;m currently pursuing B.Tech in Computer Science and Engineering at IIIT Ranchi. I am passionate about full-stack web development and enjoy building scalable, user-friendly applications.
           <br />
           <br />
           I also enjoy solving algorithmic problems and continuously learning new technologies to improve my development skills.
@@ -43,7 +43,7 @@ const page = () => {
           <br />
           Independent by nature, collaborative by choice.
         </p>
-        <Link href="https://drive.google.com/file/d/16KcDGTwRxafWHnqy3jEHFGWdD7qWNvRJ/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="flex mt-6 border rounded-full w-fit px-3 py-2 gap-2 text-[#717C55]">
+        <Link href="https://drive.google.com/file/d/16KcDGTwRxafWHnqy3jEHFGWdD7qWNvRJ/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="flex mt-6 md:mt-13 border rounded-full w-fit px-3 py-2 gap-2 text-[#717C55]">
           <FileText />
           <span>View Resume</span>
         </Link>
