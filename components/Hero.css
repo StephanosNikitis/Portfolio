@@ -45,7 +45,11 @@
 }
 
 .badge-container {
-    margin-top: 1rem;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 100%;
 }
 
 .badge {
