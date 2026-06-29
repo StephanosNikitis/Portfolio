@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import CursorFollower from "@/components/CursorFollower";
 import "./globals.css";
 
 import TransitionProvider from "@/providers/TransitionProvider";
@@ -33,6 +34,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-black">
         <TransitionProvider>
           <FirstVisitRedirectProvider>
+            <CursorFollower />
             {children}
           </FirstVisitRedirectProvider>
         </TransitionProvider>
