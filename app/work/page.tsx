@@ -52,10 +52,10 @@ const page = () => {
               <Link href="/contact" className="text-[#717C55]">Contact</Link>
           </div>
       </nav>
-      <div className="w-full px-15">
+      <div className="w-full px-12">
         <h1 className="text-3xl font-bold mt-20">Featured Projects</h1>
       </div>
-      <div className="w-full px-15 py-10 grid gap-8">
+      <div className="w-full px-12 py-10 grid gap-8">
         {projects.map((project, index) => (
           <ProjectCard key={index} project={project} />
         ))}
