@@ -36,13 +36,11 @@ export default function Hero() {
         }
 
         if (sessionStorage.getItem("hasAnimationPlayed")) {
-            // Animation has played before in this session, skip it.
             gsap.set(".hero", { clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)" });
             gsap.set(".progress-bar", { display: "none" });
             gsap.set(".header span", { y: "-8%" });
             return;
         }
-        // This is the first visit, allow the animation to play.
         setIsFirstVisit(true);
     }, []);
 
