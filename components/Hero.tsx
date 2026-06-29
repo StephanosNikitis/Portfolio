@@ -32,7 +32,7 @@ export default function Hero() {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            window.localStorage.setItem("hasVisitedHero", "true");
+            window.sessionStorage.setItem("hasVisitedHero", "true");
         }
 
         if (sessionStorage.getItem("hasAnimationPlayed")) {

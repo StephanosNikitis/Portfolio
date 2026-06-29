@@ -15,9 +15,10 @@ export default function FirstVisitRedirectProvider({
   const [checked, setChecked] = useState(false);
 
   useEffect(() => {
-    const hasVisitedHero = window.localStorage.getItem("hasVisitedHero") === "true";
+    const hasVisitedHero = window.sessionStorage.getItem("hasVisitedHero") === "true";
 
     if (!hasVisitedHero && pathname !== HERO_PATHNAME) {
+      window.sessionStorage.setItem("hasVisitedHero", "true");
       router.replace(HERO_PATHNAME);
       return;
     }
