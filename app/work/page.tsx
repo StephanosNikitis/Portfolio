@@ -40,7 +40,7 @@ const projects: Project[] = [
 
 const page = () => {
   return (
-    <main className="w-screen min-h-screen bg-[#EFEDE7]">
+    <main className="min-h-screen bg-[#EFEDE7]">
       <nav className="w-full flex justify-between px-12 pt-12">
           <div>
               <span className={`${fraunces.className} text-[#3A4A16] text-2xl`}>Shaurya Singh</span>
