@@ -17,6 +17,13 @@ const projects: Project[] = [
     link: "https://github.com/StephanosNikitis/DevOps_Dashboard",
   },
   {
+    title: "Ticketify - URL Shortener",
+    description: 
+      "Ticketify is a URL shortener where every short link is styled as a claimable ticket. It features Google OAuth login, per-link analytics with referrer/device/browser breakdowns, and a layered abuse-prevention pipeline (bot detection, rate limiting, SSRF protection) - deployed across Render and Vercel.",
+    badges: ["React.js", "Express.js", "Node.js", "MongoDB", "Vercel", "Render"],
+    link: "https://github.com/StephanosNikitis/url-shortener",
+  },
+  {
     title: "Realtime Chat App",
     description:
       "A full-stack chat application enabling instant messaging with real-time updates, online presence, and a responsive user interface.",

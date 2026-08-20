@@ -43,7 +43,7 @@ const page = () => {
           <br />
           Independent by nature, collaborative by choice.
         </p>
-        <Link href="https://drive.google.com/file/d/16KcDGTwRxafWHnqy3jEHFGWdD7qWNvRJ/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="flex mt-6 md:mt-13 border rounded-full w-fit px-3 py-2 gap-2 text-[#717C55]">
+        <Link href="https://drive.google.com/file/d/1nAMM3pLHfpBiS0TIevghqYzERFhikOAN/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="flex mt-6 md:mt-13 border rounded-full w-fit px-3 py-2 gap-2 text-[#717C55]">
           <FileText />
           <span>View Resume</span>
         </Link>
